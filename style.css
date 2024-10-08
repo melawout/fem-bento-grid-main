@@ -202,9 +202,9 @@ body{
   max-width: 15rem;
 }
 
-@media(min-width: 70rem){
+@media(min-width: 50rem){
   .grid-flow{
-    max-width: 93rem;
+    max-width: 75rem;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-areas:
