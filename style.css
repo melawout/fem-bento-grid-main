@@ -202,7 +202,7 @@ body{
   max-width: 15rem;
 }
 
-@media(min-width: 50rem){
+@media(min-width: 70rem){
   .grid-flow{
     max-width: 93rem;
     display: grid;
@@ -214,33 +214,87 @@ body{
     'four seven eight eight';
   }
 
+  .item__title{
+    text-align: start;
+  }
+
+  .item{
+    /* align-content: center; */
+    gap: 1rem;
+    overflow: hidden;
+  }
+
   .first-item{
     grid-area: two;
+  
   }
+
+  .first-item .item__title {
+    text-align: center;
+  }
+
   .second-item{
     grid-area: five;
+
+    place-content: center;
+    padding-inline-end: 0;
+
   }
+
   .third-item{
     grid-area: six;
+
+    position: relative;
   }
+
+
+  .third-item img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
   .fourth-item{
     grid-area: three;
+
+    align-content: center;
   }
+
+  .fourth-item p{
+    text-align: start;
+  }
+
+  .fourth-item img {
+    max-width: 20rem;
+
+    transform: translateX(30%);
+  }
+
   .fifth-item{
     grid-area: eight;
+
+    grid-template-columns: 1fr 1fr;
   }
+
+  .fifth-item .item__title{
+  margin-block: auto;
+  }
+
   .sixth-item{
     grid-area: seven;
   }
+
   .seventh-item{
     grid-area: one;
+
+    align-content: center;
   }
   .eight-item{
     grid-area: four;
   }
-
-
-  
-
 
 }
